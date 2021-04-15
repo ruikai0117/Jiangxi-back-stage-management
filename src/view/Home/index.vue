@@ -1,7 +1,7 @@
 <!--
  * @Author: Hou Ruikai
  * @Date: 2021-04-15 10:21:11
- * @LastEditTime: 2021-04-15 15:02:08
+ * @LastEditTime: 2021-04-15 17:36:35
  * @LastEditors: Please set LastEditors
  * @Description: 测试模型 view为页面
  * @FilePath: /测试/Jiangxi-back-stage-management/src/view/Home/index.vue
@@ -28,7 +28,7 @@ export default {
   methods: {
     GetChildren(e) {
       this.IsShow = e > 3;
-      console.log(e)
+      console.log(e);
     },
   },
   mounted() {
