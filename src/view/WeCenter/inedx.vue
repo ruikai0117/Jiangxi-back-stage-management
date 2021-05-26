@@ -1,7 +1,7 @@
 <!--
  * @Author: your name
  * @Date: 2021-05-25 14:19:50
- * @LastEditTime: 2021-05-25 15:06:30
+ * @LastEditTime: 2021-05-25 18:01:50
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /test-model/src/view/WeCenter/inedx.vue
@@ -9,6 +9,7 @@
 
 <template>
   <div>
+     <el-button @click="ChangeUser">Click</el-button>
     <el-form
       :model="PersonalDetails"
       ref="numberValidateForm"
@@ -78,7 +79,12 @@ export default {
     };
   },
   methods: {
-    
+    ChangeUser(){
+      this.$store.commit('ChangeStats',2)
+      console.log(this.$store.state.UserStatus)
+      this.$store.dispatch('TestAction',3)
+      console.log(this.$store.state.UserStatus)
+    }
   },
 };
 </script>
